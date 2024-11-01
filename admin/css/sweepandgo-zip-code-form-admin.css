@@ -1,0 +1,340 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.sng-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.short-codes {
+    margin-top: 10px;
+}
+
+.short-codes-attr li:before {
+    content: "\2022";
+    color: #00acc1;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+.link-input {
+    width: 50vw;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    margin: 0 1rem;
+}
+
+.sng-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.sng-td,
+.sng-th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.sng-tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.sng-a {
+    color: red !important;
+    text-decoration: none;
+}
+.sng-td a {
+    color: #0073aa; 
+}
+
+.sng-logo {
+    background: #FFF;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flow-root;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.sng-tabs {
+    padding: 0.1vh 0 0 0;
+    background: #FFF;
+}
+
+ .sng-tabs .ui-tabs-nav li {
+    padding-left: 1rem !important;
+}
+
+.sng-tabs .ui-tabs-nav{
+    display: flex;
+}
+
+.sng-tabs li.ui-state-active .ui-tabs-anchor{
+    border-bottom: 2px solid #00acc1;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 1rem;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sng-title {
+    color: #FFF;
+}
+
+.sng-title-logo {
+    height: auto;
+    width: 20px;
+}
+
+.sng-title-separator {
+    border: none;
+    height: 1px;
+    color: #FFF; 
+    width: 90%;
+}
+
+.sng-shortcode-separator {
+    margin-top: 2rem;
+    border: none;
+    height: 1px;
+    color: rgba(0,0,0,0.8); 
+    background-color: rgba(0,0,0,0.3);
+    width: 95%;
+}
+
+ul.sng-links li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+ul.sng-links li.active {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    background-color: #FFF;
+    border-radius: 3px;
+}
+
+.sng-logo img {
+    padding: 1rem;
+}
+
+.sng-area-logo {
+    float: left;
+}
+
+.sng-powered {
+    float: right;
+}
+
+.sng-display {
+    padding: 1rem;
+    width: 100%;
+}
+
+.sng-body {
+    background: #f1f1f1;
+}
+
+#general-tab {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .sng-body {
+        flex-wrap: wrap;
+    }
+    .sng-menu {
+        width: 100%;
+        height: auto !important;
+        min-height: 0;
+    }
+    #sng-form-message {
+        max-width: 100% !important;
+    }
+    .sng-form {
+        flex-direction: column;
+        max-width: 100% !important;
+        margin-top: 1rem;
+    }
+    .link-input {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .sng-slug-input {
+        width: 100%;
+    }
+    .sng-form .submit {
+        width: 100%;
+    }
+    .shortcode-info {
+        flex-direction: column !important;
+    }
+    .shortcode-sng, .shortcode-usage {
+        margin: 1rem 0 !important;
+    }
+
+    .sng-form label {
+        display: none !important;
+    }
+    .shortcode-sng, .shortcode-usage {
+        max-width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .sng-form-style {
+        max-width: calc(100% - 10vw) !important;
+    }
+
+    .sng-form-style .form-control {
+        padding: 1rem 2rem 0 0rem !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sng-logo img {
+        max-width: 90%;
+    }
+
+    .sng-powered {
+        display: none;
+    }
+
+    .input-help {
+        margin-left: 0 !important;
+    }
+    .sng-submit-button#submit {
+        width: 100%;
+    }
+}
+
+.sng-form {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.sng-submit-button {
+    background: #00acc1 !important;
+    border: none !important;
+    color: #FFF !important;
+    padding: 0px 2rem !important;
+}
+
+.sng-submit-button:hover {
+    background: rgba(0,172,193,0.65) !important;
+}
+
+.shortcode-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.shortcode-sng, .shortcode-usage {
+    background: #FFF;
+    padding: 1.5em;
+    border: solid 1px #dddddd;
+    flex: 1;
+}
+
+.shortcode-sng {
+    margin-right: 1rem;
+}
+
+.shortcode-usage {
+    margin-left: 1rem;
+}
+
+.shortcode-sng ul {
+    list-style: decimal;
+    padding-left: 1em;
+}
+
+#sng-form-message {
+    background: #4caf50;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1;
+}
+
+#sng-form-message.error {
+    background: red;
+}
+
+#sng-form-message .sng-message-close {
+    float: right;
+    cursor: pointer;
+}
+
+.sng-th.action {
+    width: 1vh;
+}
+
+.sng-td.action {
+    text-align: center;
+}
+
+.sng-slug-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-help {
+    font-size: 13px;
+    color: #6c757d;
+    font-style: italic;
+    margin: 0 1rem;
+}
+
+.sng-slug-label {
+    min-width: 10%;
+}
+
+#styling-tab .sng-display {
+    background: #f1f1f1; 
+}
+
+.sng-form-style {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.sng-form-style .form-control {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.sng-form-style .form-control input, .sp-original-input-container {
+    flex:1;
+}
+
+.sng-form-style .form-control label {
+    color: #454545;
+    font-weight: bold;
+    min-width: 20%;
+}
+
+.sp-original-input-container .sp-add-on {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sng-form-style .form-control input {
+    border-color: #ddd;
+    color: #666666;
+}

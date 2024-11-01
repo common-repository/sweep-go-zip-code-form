@@ -1,0 +1,164 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#sng-error-message {
+    color: red;
+}
+
+.sng-input-group {
+    display: inline-grid;
+}
+
+.sng-submit-group {
+    display: inline-grid;
+}
+
+#zip-code {
+    border-radius: 5px;
+}
+
+#sng-submit {
+    border-radius: 4px;
+    padding: 5px;
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+#sng-submit-disabled {
+    border-radius: 4px;
+    padding: 5px;
+    background: #007cba82;
+    border-color: #007cba82;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .sng-input-group {
+        width: 100%;
+    }
+
+    .sng-submit-group {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* S&G Form */
+
+@media only screen and (max-width: 414px) {
+    .sng-zip-code .sng-submit-group,
+    .sng-zip-code .sng-input-group {
+        display: grid;
+        width: 100%!important;
+    }
+    #zip_code_form {
+        margin-bottom: 40px;
+    }
+}
+
+#zip_code_form {
+    margin-bottom: 25px;
+}
+
+.sg {
+    text-align: center;
+}
+
+.sng-zip-code .sng-input-group {
+    margin-right: 10px;
+    height: 51.6px;
+}
+
+.sng-zip-code .sng-submit-group {
+    height: 51.6px;
+}
+
+.sng-zip-code .sng-submit-group .sng-button {
+    height: 51.6px;
+}
+
+.sng-zip-code .sng-submit-group #sng-submit {
+    text-decoration: none;
+    background: 00ACC1;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    color: #ffffff;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border-style: none;
+    border-width: 0;
+    background-clip: padding-box;
+    border-color: #333333;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.sng-submit-group #sng-submit-disabled  {
+    text-decoration: none;
+    background: #8c8c8c !important;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    color: #ffffff;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border-style: none;
+    border-width: 0;
+    background-clip: padding-box;
+    border-color: #333333;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.sng-submit-group #sng-submit-disabled:hover {
+    cursor: not-allowed;
+}
+
+.sng-zip-code .sng-input-group input {
+    color: #333333;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #eeeeee;
+    border-radius: 0px!important;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    text-align: left;
+    outline: none;
+    font-size: inherit;
+    line-height: 1.428571429;
+    height: auto!important;
+}
